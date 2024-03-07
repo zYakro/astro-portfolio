@@ -1,0 +1,70 @@
+---
+import ReactIcon from "../icons/ReactIcon.astro";
+import JavascriptIcon from "../icons/JavascriptIcon.astro";
+import TailwindIcon from "../icons/TailwindIcon.astro";
+import CSSIcon from "../icons/CSSIcon.astro";
+import SassIcon from "../icons/SassIcon.astro";
+import HTMLIcon from "../icons/HTMLIcon.astro";
+import TypescriptIcon from "../icons/TypescriptIcon.astro";
+import VueIcon from "../icons/VueIcon.astro";
+import AstroIcon from "../icons/AstroIcon.astro";
+import StyledComponentsIcon from "../icons/StyledComponentsIcon.astro";
+import SectionContainer from "./SectionContainer.astro";
+
+const ICON_PROPS = {
+  class:
+    "size-10 bg-[#252525] py-1.5 px-1.5 flex justify-center items-center flex-col rounded-md hover:bg-[#303030] transition",
+};
+---
+
+<SectionContainer id="about">
+  <header>
+    <h1 class="text-3xl font-bold">About me</h1>
+  </header>
+  <main class="flex mt-5 flex-col sm:flex-row gap-5">
+    <div class="flex-1 text-xs text-pretty flex flex-col gap-2 sm:text-sm">
+      <p>
+        Welcome to my portfolio! My name is Roger, <strong
+          >a dedicated web developer.</strong
+        >
+        I started coding when I was 13, making a game in C++. Right now I'm not searching
+        for a job.
+      </p>
+      <p>
+        Right now I'm exploring new technologies and growing my knowledge every
+        time I open VSCode. Always trying to make something new an bigger than
+        the last time.
+      </p>
+      <p>
+        When I was in highschool in 2023, I participated in a competition made
+        by an university with a coding project called Habit Harmony, in 2 weeks
+        I learned Flutter and completed the project, I placed 3rd place in front of many
+        promising projects.
+      </p>
+    </div>
+    <div class="flex flex-1 gap-2 flex-col">
+      <h2 class="text-sm font-bold text-pink-300">My skill set...</h2>
+      <div
+        class="w-full h-auto flex justify-start items-start flex-row flex-wrap gap-2"
+      >
+        <JavascriptIcon {...ICON_PROPS} />
+        <HTMLIcon {...ICON_PROPS} />
+        <CSSIcon {...ICON_PROPS} />
+        <TypescriptIcon {...ICON_PROPS} />
+        <ReactIcon {...ICON_PROPS} />
+        <VueIcon {...ICON_PROPS} />
+        <SassIcon {...ICON_PROPS} />
+        <StyledComponentsIcon {...ICON_PROPS} />
+      </div>
+      <h2 class="text-sm font-bold text-pink-300">
+        Currently learning and loving!
+      </h2>
+      <div
+        class="w-full flex justify-start items-start flex-row flex-wrap gap-2"
+      >
+        <TailwindIcon {...ICON_PROPS} />
+        <AstroIcon {...ICON_PROPS} />
+      </div>
+    </div>
+  </main>
+</SectionContainer>

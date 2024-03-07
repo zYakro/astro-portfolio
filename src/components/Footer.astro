@@ -1,0 +1,28 @@
+---
+import AstroIcon from "../icons/AstroIcon.astro";
+import TailwindIcon from "../icons/TailwindIcon.astro";
+---
+
+<footer class="rounded-lg shadow m-4">
+  <div
+    class="p-4 flex justify-center items-center gap-1 flex-col md:flex md:items-center md:justify-between md:flex-row w-full mx-auto max-w-xl lg:max-w-3xl md:max-w-2xl px-2 py-5"
+  >
+    <span
+      class="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex flex-row justify-center items-center gap-1"
+    >
+      Built with <AstroIcon class="size-5" />Astro and <TailwindIcon
+        class="size-5"
+      />Tailwind by Roger Ladino
+    </span>
+    <ul
+      class="flex flex-wrap items-center mt-3 text-xs font-medium text-gray-400 sm:mt-0 sm:text-sm"
+    >
+      <li>
+        <a href="#about" class="hover:underline me-4 md:me-6">About</a>
+      </li>
+      <li>
+        <a href="mailto:ztroger15@gmail.com" class="hover:underline">Contact</a>
+      </li>
+    </ul>
+  </div>
+</footer>

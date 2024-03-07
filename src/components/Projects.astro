@@ -1,0 +1,65 @@
+---
+import Project from "./Project.astro";
+import SectionContainer from "./SectionContainer.astro";
+import SassIcon from "../icons/SassIcon.astro";
+import JavascriptIcon from "../icons/JavascriptIcon.astro";
+import VueIcon from "../icons/VueIcon.astro";
+import ExpoIcon from "../icons/ExpoIcon.astro";
+import StyledComponentsIcon from "../icons/StyledComponentsIcon.astro";
+import ElectronIcon from "../icons/ElectronIcon.astro";
+import SupabaseIcon from "../icons/SupabaseIcon.astro";
+import TypescriptIcon from "../icons/TypescriptIcon.astro";
+import ReactIcon from "../icons/ReactIcon.astro";
+import FlutterIcon from "../icons/FlutterIcon.astro";
+import NierNotes from "../assets/nier-notes.png"
+import HabitHarmony from "../assets/habitharmony.png"
+import NotesApp from "../assets/notes-app.png"
+
+const ICON_PROPS = {
+  class: "size-7 bg-[#202020] p-1 rounded-md hover:bg-[#303030] transition",
+};
+---
+
+<SectionContainer id="projects">
+  <h1 class="font-bold text-3xl">
+    Projects
+  </h1>
+  <main
+    class="py-5 w-full flex gap-10 sm:gap-20 flex-col"
+  >
+    <Project
+      title="Nier Notes"
+      description="An electron application for managing local text files with a Nier's Automata theme."
+      image={NierNotes}
+      link="https://github.com/zYakro/nier-notes"
+      github="https://github.com/zYakro/nier-notes"
+    >
+      <VueIcon {...ICON_PROPS} />
+      <JavascriptIcon {...ICON_PROPS} />
+      <SassIcon {...ICON_PROPS} />
+      <ElectronIcon {...ICON_PROPS} />
+    </Project>
+    <Project
+      title="Notes App"
+      description="A habit-traking and journal app with a futuristic style."
+      image={NotesApp}
+      link="https://github.com/zYakro/notes-app"
+      github="https://github.com/zYakro/notes-app"
+    >
+      <TypescriptIcon {...ICON_PROPS} />
+      <ReactIcon {...ICON_PROPS} />
+      <ExpoIcon {...ICON_PROPS} />
+      <StyledComponentsIcon {...ICON_PROPS} />
+      <SupabaseIcon {...ICON_PROPS} />
+    </Project>
+    <Project
+      title="Habit Harmony"
+      description="An app that leverages music for task motivation. This project was made for a competition for an university and got 3rd place."
+      image={HabitHarmony}
+      link="https://github.com/zYakro/habitharmony"
+      github="https://github.com/zYakro/habitharmony"
+    >
+      <FlutterIcon {...ICON_PROPS} />
+    </Project>
+  </main>
+</SectionContainer>

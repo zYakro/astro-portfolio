@@ -1,0 +1,38 @@
+---
+import SocialPill from "./SocialPill.astro";
+import GithubIcon from "../icons/GithubIcon.astro";
+import MailIcon from "../icons/MailIcon.astro";
+---
+
+<section
+  class="background-section h-screen max-w-full flex justify-center items-center mb-5"
+  id="home"
+>
+  <div class="flex justify-center items-start flex-col gap-6 px-2">
+    <h1 class="text-7xl font-bold rounded-sm text-white stroke-white stroke-2">
+      Roger Ladino
+    </h1>
+    <p class="max-w-full text-sm rounded-sm text-gray-100">
+      <strong>Web Developer.</strong> Specialized in developing unique web apps 
+    </p>
+    <nav class="flex justify-center items-center gap-5 rounded-sm">
+      <SocialPill href="https://github.com/zYakro">
+        <GithubIcon class="size-4" />
+        Github
+      </SocialPill>
+      <SocialPill href="mailto:ztroger15@gmail.com">
+        <MailIcon class="size-4" />
+        ztroger15@gmail.com
+      </SocialPill>
+    </nav>
+  </div>
+</section>
+
+<style>
+  .background-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("https://wallpaperwaifu.com/wp-content/uploads/2019/10/sunset-city-thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
